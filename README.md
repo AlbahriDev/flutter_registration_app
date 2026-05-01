@@ -33,7 +33,7 @@
 | **HTTP** | التواصل بين Flutter و PHP |
 
 <div align="center">
-  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_register.png?raw=true" width="500">
+  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_register.png?raw=true" width="700">
   <br>
   <em>📝 شاشة التسجيل</em>
 </div>
@@ -41,7 +41,7 @@
 <br>
 
 <div align="center">
-  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_success.png?raw=true" width="500">
+  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_success.png?raw=true" width="700">
   <br>
     <em>📝 شاشة التسجيل</em>
 
