@@ -10,16 +10,18 @@
 </div>
 
 ## 🎯 نبذة عن المشروع
-تطبيق **Flutter** متكامل لتسجيل المستخدمين مع التحقق من البيانات، متصل مع **PHP** و **MySQL** (XAMPP) من خلال API. تم تصميم الواجهة باللغة العربية مع التركيز على تجربة مستخدم سلسة وجذابة.
+تطبيق **Flutter** متكامل لتسجيل المستخدمين وتسجيل الدخول مع التحقق من البيانات، متصل مع **PHP** و **MySQL** (XAMPP) من خلال API. تم تصميم الواجهة باللغة العربية مع التركيز على تجربة مستخدم سلسة وجذابة.
 
 ## ✨ المميزات
-- ✅ تسجيل مستخدمين مع التحقق من صحة البيانات
+- ✅ تسجيل مستخدمين جدد مع التحقق من صحة البيانات
+- ✅ تسجيل دخول تلقائي للمستخدمين المسجلين مسبقاً
 - ✅ التحقق من قوة كلمة المرور (حروف + أرقام + رموز)
 - ✅ إظهار/إخفاء كلمة المرور
 - ✅ التحقق من تطابق كلمة المرور
 - ✅ واجهة مستخدم عربية جذابة (RTL)
 - ✅ اتصال مع قاعدة بيانات MySQL عبر PHP API
 - ✅ تصميم متجاوب (Responsive)
+- ✅ التحقق من صحة البريد الإلكتروني
 
 ## 🛠️ التقنيات المستخدمة
 
@@ -32,19 +34,20 @@
 | **XAMPP** | بيئة التشغيل المحلية |
 | **HTTP** | التواصل بين Flutter و PHP |
 
+## 📸 صور من التطبيق
+
 <div align="center">
-  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_register.png?raw=true" width="700">
+  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_register.png?raw=true" width="350">
   <br>
-  <em>📝 شاشة التسجيل</em>
+  <em>📝 شاشة التسجيل الرئيسية</em>
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_success.png?raw=true" width="700">
+  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_success.png?raw=true" width="350">
   <br>
-    <em>📝 شاشة التسجيل</em>
-
+  <em>✅ شاشة النجاح بعد التسجيل</em>
 </div>
 
 ## 🚀 كيفية التشغيل
