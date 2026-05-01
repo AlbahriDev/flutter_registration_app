@@ -1,16 +1,54 @@
-# zubair_assignmen
+# 📱 تطبيق التسجيل الذكي - Zubair University Assignment
 
-A new Flutter project.
+<div align="center">
 
-## Getting Started
+![Flutter](https://img.shields.io/badge/Flutter-3.16.0-blue)
+![PHP](https://img.shields.io/badge/PHP-8.0-purple)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-This project is a starting point for a Flutter application.
+</div>
 
-A few resources to get you started if this is your first Flutter project:
+## 🎯 نبذة عن المشروع
+تطبيق **Flutter** متكامل لتسجيل المستخدمين مع التحقق من البيانات، متصل مع **PHP** و **MySQL** (XAMPP) من خلال API. تم تصميم الواجهة باللغة العربية مع التركيز على تجربة مستخدم سلسة وجذابة.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ المميزات
+- ✅ تسجيل مستخدمين مع التحقق من صحة البيانات
+- ✅ التحقق من قوة كلمة المرور (حروف + أرقام + رموز)
+- ✅ إظهار/إخفاء كلمة المرور
+- ✅ التحقق من تطابق كلمة المرور
+- ✅ واجهة مستخدم عربية جذابة (RTL)
+- ✅ اتصال مع قاعدة بيانات MySQL عبر PHP API
+- ✅ تصميم متجاوب (Responsive)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ التقنيات المستخدمة
+
+| التقنية | الغرض |
+|---------|-------|
+| **Flutter** | تطوير واجهة المستخدم |
+| **Dart** | لغة البرمجة الأساسية |
+| **PHP** | بناء الـ API الخلفي |
+| **MySQL** | قاعدة البيانات |
+| **XAMPP** | بيئة التشغيل المحلية |
+| **HTTP** | التواصل بين Flutter و PHP |
+
+## 📸 صور من التطبيق
+
+<div align="center">
+  <img src="لقطة شاشة 2026-05-01 173659.png" width="280" alt="شاشة التسجيل الرئيسية">
+  <br>
+  <em>✨ شاشة التسجيل الرئيسية - تصميم عربي عصري</em>
+</div>
+
+## 🚀 كيفية التشغيل
+
+### المتطلبات الأساسية
+- Flutter SDK `^3.16.0`
+- XAMPP (Apache + MySQL)
+
+### خطوات التشغيل
+
+#### 1. استنساخ المشروع
+```bash
+git clone https://github.com/AlbahriDev/flutter_registration_app.git
+cd flutter_registration_app
