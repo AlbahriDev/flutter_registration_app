@@ -2,20 +2,12 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  // ✅ التصحيح: للمحاكي Android استخدم 10.0.2.2 بدلاً من localhost
-  // static const String baseUrl = 'http://localhost/register_api';  // ❌ هذا لا يعمل مع المحاكي
+   
   
   // ✅ للحاسوب (تشغيل على متصفح Chrome)
    static const String baseUrl = 'http://localhost/register_api';
   
-  // ✅ للمحاكي Android (الاستخدام الأكثر شيوعاً)
-//  static const String baseUrl = 'http://10.0.2.2/register_api';
-  
-  // ✅ للهاتف الحقيقي (استبدل 192.168.1.100 بـ IP جهازك الحقيقي)
-  // static const String baseUrl = 'http://192.168.1.100/register_api';
-  
-  // ✅ للـ Web على منفذ 8080
-  // static const String baseUrl = 'http://localhost:8080/register_api';
+
 
   // دالة تسجيل مستخدم جديد
   Future<Map<String, dynamic>> registerUser({

@@ -161,7 +161,7 @@ class _FirstScreenState extends State<FirstScreen> {
     return null;
   }
 
-  void _validateAndProceed() async { // غيّر إلى async
+void _validateAndProceed() async {
   setState(() {
     _nameTouched = true;
     _emailTouched = true;
@@ -217,23 +217,64 @@ class _FirstScreenState extends State<FirstScreen> {
   Navigator.pop(context);
 
   if (result['success'] == true) {
-    // تم التسجيل بنجاح
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => Directionality(
-          textDirection: TextDirection.rtl,
-          child: SecondScreen(
-            userName: _nameController.text,
-            userEmail: _emailController.text,
+    // نجاح (سواء تسجيل جديد أو تسجيل دخول)
+    String userName = result['user_name'] ?? _nameController.text;
+    String userEmail = result['user_email'] ?? _emailController.text;
+    
+    if (result['is_login'] == true) {
+      // ✅ تم تسجيل الدخول (بريد موجود)
+      _showSuccessDialog('تم تسجيل الدخول', 'مرحباً بعودتك $userName', userName, userEmail);
+    } else {
+      // ✅ تم التسجيل الجديد
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Directionality(
+            textDirection: TextDirection.rtl,
+            child: SecondScreen(
+              userName: userName,
+              userEmail: userEmail,
+            ),
           ),
         ),
-      ),
-    );
+      );
+    }
   } else {
-    // فشل التسجيل
-    _showErrorDialog('فشل التسجيل', result['message'] ?? 'حدث خطأ غير متوقع');
+    // فشل
+    _showErrorDialog('فشل', result['message'] ?? 'حدث خطأ غير متوقع');
   }
+}
+
+// دالة إضافية لعرض رسالة نجاح لتسجيل الدخول
+void _showSuccessDialog(String title, String message, String userName, String userEmail) {
+  showDialog(
+    context: context,
+    builder: (ctx) => AlertDialog(
+      title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
+      content: Text(message),
+      actions: [
+        TextButton(
+          onPressed: () {
+            Navigator.pop(ctx);
+            // الانتقال إلى شاشة النجاح
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => Directionality(
+                  textDirection: TextDirection.rtl,
+                  child: SecondScreen(
+                    userName: userName,
+                    userEmail: userEmail,
+                  ),
+                ),
+              ),
+            );
+          },
+          child: const Text('متابعة'),
+        ),
+      ],
+    ),
+  );
 }
   void _showErrorDialog(String title, String message) {
     showDialog(
