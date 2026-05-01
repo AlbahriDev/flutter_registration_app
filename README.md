@@ -35,9 +35,15 @@
 ## 📸 صور من التطبيق
 
 <div align="center">
-  <img src="لقطة شاشة 2026-05-01 173659.png" width="280" alt="شاشة التسجيل الرئيسية">
+  <img src="https://raw.githubusercontent.com/AlbahriDev/flutter_registration_app/main/%D9%84%D9%82%D8%B7%D8%A9%20%D8%B4%D8%A7%D8%B4%D8%A9%202026-05-01%20173659.png" width="280" alt="شاشة التسجيل الرئيسية">
   <br>
   <em>✨ شاشة التسجيل الرئيسية - تصميم عربي عصري</em>
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AlbahriDev/flutter_registration_app/main/%D9%84%D9%82%D8%B7%D8%A9%20%D8%B4%D8%A7%D8%B4%D8%A9%202026-05-01%20173730.png" width="280" alt="شاشة النجاح">
+  <br>
+  <em>✅ شاشة النجاح بعد التسجيل</em>
 </div>
 
 ## 🚀 كيفية التشغيل
