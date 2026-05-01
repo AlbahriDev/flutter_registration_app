@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.38.0-blue)
-![PHP](https://img.shields.io/badge/PHP-8.0-purple)
+![PHP](https://img.shields.io/badge/PHP-8.2.12-purple)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
