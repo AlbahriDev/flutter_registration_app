@@ -35,15 +35,15 @@
 ## 📸 صور من التطبيق
 
 <div align="center">
-  <img src="screenshot_register.png" width="260" alt="شاشة التسجيل">
+  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_register.png?raw=true" width="260">
   <br>
-  <em>📝 شاشة التسجيل - تصميم عربي عصري</em>
+  <em>📝 شاشة التسجيل</em>
 </div>
 
 <br>
 
 <div align="center">
-  <img src="screenshot_success.png" width="260" alt="شاشة النجاح">
+  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_success.png?raw=true" width="260">
   <br>
   <em>✅ شاشة النجاح بعد التسجيل</em>
 </div>
