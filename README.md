@@ -32,10 +32,8 @@
 | **XAMPP** | بيئة التشغيل المحلية |
 | **HTTP** | التواصل بين Flutter و PHP |
 
-## 📸 صور من التطبيق
-
 <div align="center">
-  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_register.png?raw=true" width="260">
+  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_register.png?raw=true" width="500">
   <br>
   <em>📝 شاشة التسجيل</em>
 </div>
@@ -43,9 +41,10 @@
 <br>
 
 <div align="center">
-  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_success.png?raw=true" width="260">
+  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_success.png?raw=true" width="500">
   <br>
-  <em>✅ شاشة النجاح بعد التسجيل</em>
+    <em>📝 شاشة التسجيل</em>
+
 </div>
 
 ## 🚀 كيفية التشغيل
