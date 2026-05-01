@@ -47,7 +47,7 @@
 <div align="center">
   <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_success.png?raw=true" width="700">
   <br>
-  <em>✅ شاشة النجاح بعد التسجيل</em>
+  <em>📝 شاشة التسجيل الرئيسية</em>
 </div>
 
 ## 🚀 كيفية التشغيل
