@@ -40,10 +40,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `full_name`, `email`, `password`, `phone`, `created_at`) VALUES
-(4, 'الحسين البحري ', 'bhrwrrhsyn@gmail.com', '$2y$10$esjwi/ZIzweOsKI6GNSRhu4JfaJsYb/gLnZamRPPZvy8Sub9qPjQ2', '772032403', '2026-05-01 14:09:03'),
-(8, 'بحرورررررررر', 'bhrwr0rhsyn@gmail.com', '$2y$10$5ijawYG84GEXG4QvSw/dyO7BVpEon4ucaEuo5HD20RjLmvewQPJzS', '772032403', '2026-05-01 14:20:36'),
-(9, 'بحرورررررررر', 'bhrw00rrhsyn@gmail.com', '$2y$10$h.A2ueqrHxADg9tYf.VDzezlfMpQMoaztELYlhUluNsF7SA6XlFGa', '772032403', '2026-05-01 14:29:36');
 
 --
 -- Indexes for dumped tables
