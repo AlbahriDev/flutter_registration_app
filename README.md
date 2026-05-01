@@ -10,42 +10,40 @@
 </div>
 
 ## 🎯 نبذة عن المشروع
-
 تطبيق **Flutter** متكامل لتسجيل المستخدمين مع التحقق من البيانات، متصل مع **PHP** و **MySQL** (XAMPP) من خلال API. تم تصميم الواجهة باللغة العربية مع التركيز على تجربة مستخدم سلسة وجذابة.
 
 ## ✨ المميزات
-
-* ✅ تسجيل مستخدمين مع التحقق من صحة البيانات
-* ✅ التحقق من قوة كلمة المرور (حروف + أرقام + رموز)
-* ✅ إظهار/إخفاء كلمة المرور
-* ✅ التحقق من تطابق كلمة المرور
-* ✅ واجهة مستخدم عربية جذابة (RTL)
-* ✅ اتصال مع قاعدة بيانات MySQL عبر PHP API
-* ✅ تصميم متجاوب (Responsive)
+- ✅ تسجيل مستخدمين مع التحقق من صحة البيانات
+- ✅ التحقق من قوة كلمة المرور (حروف + أرقام + رموز)
+- ✅ إظهار/إخفاء كلمة المرور
+- ✅ التحقق من تطابق كلمة المرور
+- ✅ واجهة مستخدم عربية جذابة (RTL)
+- ✅ اتصال مع قاعدة بيانات MySQL عبر PHP API
+- ✅ تصميم متجاوب (Responsive)
 
 ## 🛠️ التقنيات المستخدمة
 
-| التقنية     | الغرض                     |
-| ----------- | ------------------------- |
-| **Flutter** | تطوير واجهة المستخدم      |
-| **Dart**    | لغة البرمجة الأساسية      |
-| **PHP**     | بناء الـ API الخلفي       |
-| **MySQL**   | قاعدة البيانات            |
-| **XAMPP**   | بيئة التشغيل المحلية      |
-| **HTTP**    | التواصل بين Flutter و PHP |
+| التقنية | الغرض |
+|---------|-------|
+| **Flutter** | تطوير واجهة المستخدم |
+| **Dart** | لغة البرمجة الأساسية |
+| **PHP** | بناء الـ API الخلفي |
+| **MySQL** | قاعدة البيانات |
+| **XAMPP** | بيئة التشغيل المحلية |
+| **HTTP** | التواصل بين Flutter و PHP |
 
 ## 📸 صور من التطبيق
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AlbahriDev/flutter_registration_app/main/screenshot_register.png" width="280" alt="شاشة التسجيل الرئيسية">
+  <img src="screenshot_register.png" width="260" alt="شاشة التسجيل">
   <br>
-  <em>✨ شاشة التسجيل الرئيسية - تصميم عربي عصري</em>
+  <em>📝 شاشة التسجيل - تصميم عربي عصري</em>
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AlbahriDev/flutter_registration_app/main/screenshot_success.png" width="280" alt="شاشة النجاح">
+  <img src="screenshot_success.png" width="260" alt="شاشة النجاح">
   <br>
   <em>✅ شاشة النجاح بعد التسجيل</em>
 </div>
@@ -53,15 +51,12 @@
 ## 🚀 كيفية التشغيل
 
 ### المتطلبات الأساسية
-
-* Flutter SDK `^3.38.0`
-* XAMPP (Apache + MySQL)
+- Flutter SDK `^3.38.0`
+- XAMPP (Apache + MySQL)
 
 ### خطوات التشغيل
 
 #### 1. استنساخ المشروع
-
 ```bash
 git clone https://github.com/AlbahriDev/flutter_registration_app.git
 cd flutter_registration_app
-```
