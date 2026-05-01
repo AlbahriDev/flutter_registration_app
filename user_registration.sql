@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2026 at 06:06 PM
+-- Generation Time: May 01, 2026 at 07:10 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,9 +41,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `full_name`, `email`, `password`, `phone`, `created_at`) VALUES
-(4, 'الحسين البحري ', 'bhrwrrhsyn@gmail.com', '$2y$10$esjwi/ZIzweOsKI6GNSRhu4JfaJsYb/gLnZamRPPZvy8Sub9qPjQ2', '772032403', '2026-05-01 14:09:03'),
-(8, 'بحرورررررررر', 'bhrwr0rhsyn@gmail.com', '$2y$10$5ijawYG84GEXG4QvSw/dyO7BVpEon4ucaEuo5HD20RjLmvewQPJzS', '772032403', '2026-05-01 14:20:36'),
-(9, 'بحرورررررررر', 'bhrw00rrhsyn@gmail.com', '$2y$10$h.A2ueqrHxADg9tYf.VDzezlfMpQMoaztELYlhUluNsF7SA6XlFGa', '772032403', '2026-05-01 14:29:36');
+(1, 'الحسين محمد', 'bhrwrrhsyn@gmail.com', '$2y$10$AirE.lP03Ym3wY67bOnnaOom8yeY6fpROd3ipW8CCQRUFkcsjQYMa', '772032403', '2026-05-01 17:05:08'),
+(2, 'الحسين البحري', 'bh222rwrrhsyn@gmail.com', '$2y$10$ZEDdSphfaRcEyPCdTS2K6eLrAMLYeQrN5FaWQkiF7OkM2Z05Ej/6O', '772032403', '2026-05-01 17:06:01');
 
 --
 -- Indexes for dumped tables
@@ -53,8 +52,7 @@ INSERT INTO `users` (`id`, `full_name`, `email`, `password`, `phone`, `created_a
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -64,7 +62,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
