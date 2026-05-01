@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $conn->real_escape_string(trim($data['email']));
     $phone = $conn->real_escape_string(trim($data['phone']));
     
-    // ✅ إضافة: التحقق من صحة البريد إلكتروني في الخادم
+    // التحقق من صحة البريد إلكتروني
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo json_encode([
             "success" => false,
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
     
-    // ✅ إضافة: التحقق من قوة كلمة المرور في الخادم
+    // التحقق من قوة كلمة المرور
     $password = $data['password'];
     if (strlen($password) < 8) {
         echo json_encode([
@@ -40,7 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
     
-    // ✅ إضافة: التحقق من وجود أرقام وحروف ورموز في كلمة المرور
     if (!preg_match('/[A-Za-z]/', $password) || 
         !preg_match('/[0-9]/', $password) || 
         !preg_match('/[!@#$%^&*(),.?":{}|<>]/', $password)) {
@@ -51,21 +50,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
     
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-    
-    // التحقق من عدم وجود البريد الإلكتروني مسبقاً
-    $check_email = "SELECT id FROM users WHERE email = '$email'";
+    // التحقق من وجود البريد الإلكتروني مسبقاً
+    $check_email = "SELECT id, full_name, password FROM users WHERE email = '$email'";
     $result = $conn->query($check_email);
     
     if ($result->num_rows > 0) {
-        echo json_encode([
-            "success" => false,
-            "message" => "البريد الإلكتروني مسجل مسبقاً"
-        ]);
+        // ✅ البريد موجود → محاولة تسجيل دخول
+        $user = $result->fetch_assoc();
+        
+        // التحقق من كلمة المرور
+        if (password_verify($password, $user['password'])) {
+            // تسجيل الدخول ناجح
+            echo json_encode([
+                "success" => true,
+                "message" => "تم تسجيل الدخول بنجاح",
+                "is_login" => true,
+                "user_id" => $user['id'],
+                "user_name" => $user['full_name'],
+                "user_email" => $email
+            ]);
+        } else {
+            // كلمة المرور خاطئة
+            echo json_encode([
+                "success" => false,
+                "message" => "البريد الإلكتروني موجود ولكن كلمة المرور غير صحيحة"
+            ]);
+        }
         exit;
     }
     
-    // إدخال المستخدم الجديد
+    // ✅ البريد غير موجود → تسجيل مستخدم جديد
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
     $sql = "INSERT INTO users (full_name, email, password, phone) VALUES ('$full_name', '$email', '$hashed_password', '$phone')";
     
     if ($conn->query($sql) === TRUE) {
@@ -73,6 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo json_encode([
             "success" => true,
             "message" => "تم التسجيل بنجاح",
+            "is_login" => false,
             "user_id" => $user_id,
             "user_name" => $full_name,
             "user_email" => $email
