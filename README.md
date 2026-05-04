@@ -33,11 +33,12 @@
 | **MySQL** | قاعدة البيانات |
 | **XAMPP** | بيئة التشغيل المحلية |
 | **HTTP** | التواصل بين Flutter و PHP |
-
 ## 📸 صور من التطبيق
 
 <div align="center">
-  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_register.png?raw=true" width="700">
+  <a href="https://raw.githubusercontent.com/AlbahriDev/flutter_registration_app/main/screenshot_register.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/AlbahriDev/flutter_registration_app/main/screenshot_register.png" width="700">
+  </a>
   <br>
   <em>📝 شاشة التسجيل الرئيسية</em>
 </div>
@@ -45,10 +46,13 @@
 <br>
 
 <div align="center">
-  <img src="https://github.com/AlbahriDev/flutter_registration_app/blob/main/screenshot_success.png?raw=true" width="700">
+  <a href="https://raw.githubusercontent.com/AlbahriDev/flutter_registration_app/main/screenshot_success.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/AlbahriDev/flutter_registration_app/main/screenshot_success.png" width="700">
+  </a>
   <br>
-  <em>📝 شاشة التسجيل الرئيسية</em>
+  <em>✅ شاشة نجاح التسجيل</em>
 </div>
+
 
 ## 🚀 كيفية التشغيل
 
