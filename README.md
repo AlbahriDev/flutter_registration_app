@@ -156,3 +156,20 @@ flutter_registration_app/
 ├── screenshot_success.png
 └── pubspec.yaml
 ```
+
+
+
+---
+
+## 🚀 كيفية التشغيل
+
+### المتطلبات الأساسية
+- Flutter SDK `^3.38.0`
+- XAMPP (Apache + MySQL)
+
+### خطوات التشغيل
+
+#### 1. استنساخ المشروع
+```bash
+git clone https://github.com/AlbahriDev/flutter_registration_app.git
+cd flutter_registration_app
